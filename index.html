@@ -2,47 +2,365 @@
 <html>
 <head>
   <title></title>
-  <style>
-  @-webkit-keyframes slide {
-  	0% {
-  		left: 0;
-  		top: 0;
-  	}
-  	50%{
-  		left:244px;
-  		top: 0;
-  	}
-  }
 
-  .stage{
-  	background: #eaeaed;
-  	broder-radius: 50%;
-  	height: 50px;
-  	position:absolute;
-  	width: 50px
-  }
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="dist/css/hover-min.css">
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
 
-  .stage:hover .ball{
-  	-webkit-animation: slide 2s linear;
-  }
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 
-  .ball{
-  	background: #2db34a;
-  	border-radius: 50%;
-  	height: 50px;
-  	position: absolute;
-  	width: 50px;
-  }
+<script type="text/javascript" src="dist/js/jquery.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+
+<style>
 
 
 
-  </style>
-  </head>
-  <body> 
 
-  <div class="Stage">
-  	<figure class="ball"></figure>
-  </div>
+.container{
+	margin: 150px;
+	height: 1000px;
+}
 
-  </body>
- </html>
+li{
+text-align: center;
+display: inline;
+
+}
+
+	
+
+
+/*
+
+.jumbotron:hover{
+display:inline-block;
+vertical-align:middle;
+-webkit-transform:translateZ(0);
+transform:translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+-moz-osx-font-smoothing:grayscale;
+position:relative;
+background:url("images/naivasha.jpg");
+
+
+-webkit-transition-property:color;
+transition-property:color;
+-webkit-transition-duration:.3s;
+transition-duration:.3s
+}*/
+
+/*#bg.hvr-shutter-in-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: red;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("images/b3.jog");
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+  color: white;
+}
+.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+*/
+p{
+	text-align: center;
+}
+
+h1{
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Yesteryear', cursive;
+
+}
+
+h2{
+	font-size: 60px;
+	text-align: center;
+
+}
+
+h3{
+  	text-align: center;
+  	font-size: 40px;
+}
+
+/*.row{
+	padding-left: 100px;
+	padding-right: 50px;
+
+
+}*/
+
+p{
+	font-size: 40px;
+	padding-top: 70px;
+}
+
+.jumbotron {
+	background: url("images/bahamas.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 700px;
+	padding-top: 150px;
+	text-align: center;
+	color:white;
+
+}
+
+.nav{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+body{
+	background-color: black;
+	color:white;
+}
+
+header{
+	background-color: black;
+}
+
+.navbar{
+	background-color: transparent;
+}
+
+.image{
+	padding-left: 542px;
+	border-radius: 200px;
+}
+
+#col{
+	background-color: black;
+	padding-left: 542px;
+
+}
+
+.row{
+	background-color: black;
+}
+
+
+
+
+
+
+	
+</style>
+</head>
+
+
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+ 		 <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#About Me"><b>About Me</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>My Photos</b> <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#City">City</a></li>
+            <li><a href="#Nature">Nature</a></li>
+
+        
+          </ul>
+          	<li><a href="My Blog.html"><b>My Blog</b></a></li>
+        </li>
+        
+      </ul>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/dhruti.shah.796"><img src="images/fb_icon.jpg" width="30px" height="30px"></a></li>
+        <li><a href="https://twitter.com/DhrutiShah07"><img src="images/twt_icon.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=68148683&trk=spm_pic"><img src="images/lin_icon.jpg"></a></li>
+
+
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="jumbotron">
+  		<div class="Box">
+			<h1><b>"There is no elevator to success, you have to take the stairs"</b></h1>
+		</div>
+ 	</div>
+
+	
+	<br></br>
+	<br></br>
+	<a name="About Me"></a>
+	<br/><br/>
+	<h1><b>About Me</b></h1>
+  			<div id="col">
+    			<img src="images/Dhruti.jpg" alt="..." height="200px" width="200px">
+  			</div>
+  
+
+		<p> Hi, I am Dhruti Shah. I am very passionate about Education and would definitely love to help the not so priviledged students to ensure they are able to receive education for a brighter future. I also love traveling and photograhy. I have been taking picture mainly of nature and cities using my S3.</p> 
+
+	<br></br>
+	<br></br>
+  <h2><b>My Photos</b></h2>
+  <br></br>
+	<a name="City"></a>
+  <h3><b>City<b></h3>
+  <br></br>
+    <div class="row">
+ 			 <div class="col-xs-3 hvr-bounce-in">
+    			<a class="thumbnail">
+     				 <img src="images/city1.jpg" alt="...">
+    			</a>
+ 			 </div>
+  			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city2.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city3.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city4.jpg" alt="...">
+    			</a>
+ 			 </div>
+		</div>
+
+		<div class="row">
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city5.jpg" alt="...">
+    			</a>
+ 			 </div>
+  			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city6.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city7.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/city8.jpg" alt="...">
+    			</a>
+ 			 </div>
+		</div>
+
+	<a name="Nature"></a>
+	<br></br>
+	<h3><b>Nature<b></h3>
+	<br></br>
+		<div class="row">
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N1.jpg" alt="...">
+    			</a>
+ 			 </div>
+  			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N2.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N3.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N4.jpg" alt="...">
+    			</a>
+ 			 </div>
+		</div>
+
+		<div class="row">
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N5.jpg">
+    			</a>
+ 			 </div>
+  			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N6.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N7.jpg" alt="...">
+    			</a>
+ 			 </div>
+ 			 <div class="col-xs-3">
+    			<a class="thumbnail hvr-bounce-in">
+     				 <img src="images/N8.jpg" alt="...">
+    			</a>
+ 			 </div>
+		</div>
+
+
+
+
+ 
+
+</body>
+	
+
+
+	
+
+
