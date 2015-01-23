@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="dist/css/hover-min.css">
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="dist/js/jquery.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+ 		 <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#About Me"><b>About Me</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>My Photos</b> <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#City">City</a></li>
+            <li><a href="#Nature">Nature</a></li>
+
+        
+          </ul>
+          	<li><a href="My Blog.html"><b>My Blog</b></a></li>
+        </li>
+        
+      </ul>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/dhruti.shah.796"><img src="images/fb_icon.jpg" width="30px" height="30px"></a></li>
+        <li><a href="https://twitter.com/DhrutiShah07"><img src="images/twt_icon.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=68148683&trk=spm_pic"><img src="images/lin_icon.jpg"></a></li>
+
+
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="jumbotron">
+  		<div class="Box">
+			<h1><b>"There is no elevator to success, you have to take the stairs"</b></h1>
+		</div>
+ 	</div>
+
+	
+	
+
+ 
+
+</body>
+	
+
+
+	
+
+
